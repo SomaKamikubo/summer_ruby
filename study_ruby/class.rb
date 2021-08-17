@@ -82,3 +82,14 @@ p text       #=> "abcde "
 # 破壊的なメソッド呼出し
 p text.chop! #=> "abcde"
 p text
+#!をつけることで例外を発生させる
+#https://qiita.com/ozin/items/5968971c9d2b3ab0a84d
+
+
+puts("-----クラスメソッド------")
+class HelloRuby
+    def self.greeting
+      puts("Hello! Ruby!")
+    end
+end
+HelloRuby.greeting 
